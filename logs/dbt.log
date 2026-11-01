@@ -1,0 +1,39 @@
+[0m12:51:56.148664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002031A8BD520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002031A1CAF00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002031A1CA270>]}
+
+
+============================== 12:51:56.292666 | c50907ff-b454-49fe-9123-23d82c28c471 ==============================
+[0m12:51:56.292666 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:51:56.293706 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt parse --profiles-dir .', 'log_path': 'C:\\Dev\\DBT_Snowflake\\snowflake-dbt-airbnb\\logs'}
+[0m12:51:56.303527 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m12:51:56.303527 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Credentials in profile "snowflake_dbt_airbnb", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m12:51:56.304531 [debug] [MainThread]: Command `dbt parse` failed at 12:51:56.304531 after 0.35 seconds
+[0m12:51:56.305530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002031A345BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020319C26A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002031C4905C0>]}
+[0m12:51:56.305530 [debug] [MainThread]: Flushing usage events
+[0m12:51:57.947847 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:52:22.688548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CD08EFC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212C9CAE1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CC43A2A0>]}
+
+
+============================== 12:52:22.696247 | 7b15b5d5-65ad-4a22-a7e1-39ca15cebe29 ==============================
+[0m12:52:22.696247 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:52:22.698276 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt parse --profiles-dir .', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Dev\\DBT_Snowflake\\snowflake-dbt-airbnb\\logs'}
+[0m12:52:32.123610 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:52:32.124619 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:52:32.125623 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:52:37.687447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b15b5d5-65ad-4a22-a7e1-39ca15cebe29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CA6E81D0>]}
+[0m12:52:37.768085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b15b5d5-65ad-4a22-a7e1-39ca15cebe29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CF7411F0>]}
+[0m12:52:37.797550 [info ] [MainThread]: Registered adapter: snowflake=1.12.4
+[0m12:52:38.203864 [debug] [MainThread]: checksum: 6cd6ef4f6a314eac08d1fbe231dacf7253196e37018d50cda275f3a3f2128d97, vars: {}, profile: snowflake_dbt_airbnb, target: dev, version: 1.12.6
+[0m12:52:38.203864 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:52:38.205330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7b15b5d5-65ad-4a22-a7e1-39ca15cebe29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D12DAD20>]}
+[0m12:52:41.946088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b15b5d5-65ad-4a22-a7e1-39ca15cebe29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D185ECC0>]}
+[0m12:52:41.950560 [info ] [MainThread]: Performance info: C:\Dev\DBT_Snowflake\snowflake-dbt-airbnb\target\perf_info.json
+[0m12:52:42.038731 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Dev\DBT_Snowflake\snowflake-dbt-airbnb\target\manifest.json
+[0m12:52:42.042818 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Dev\DBT_Snowflake\snowflake-dbt-airbnb\target\semantic_manifest.json
+[0m12:52:42.499043 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Dev\DBT_Snowflake\snowflake-dbt-airbnb\target\osi_document.json
+[0m12:52:42.500449 [debug] [MainThread]: Command `dbt parse` succeeded at 12:52:42.500449 after 20.10 seconds
+[0m12:52:42.500449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CA7C0170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212CFD0B470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212D0FF03B0>]}
+[0m12:52:42.500449 [debug] [MainThread]: Flushing usage events
+[0m12:52:44.034651 [debug] [MainThread]: An error was encountered while trying to flush usage events
